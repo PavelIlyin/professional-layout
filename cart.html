@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FASHION</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+</head>
+
+<body>
+    <header class="header center">
+        <div class="header_left">
+            <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+            <a href="#"><img class="header_search" src="img/search.svg" alt="search"></a>
+        </div>
+        <nav class="header_right">
+            <a href="catalog.html"><img src="img/menu.svg" alt="menu"></a>
+            <a href="registration.html"><img class="header_accoutn" src="img/account.svg" alt="account"></a>
+            <a href="cart.html"><img src="img/cart.svg" alt="cart"></a>
+        </nav>
+    </header>
+    <section class="catalog_series center">
+        <h3 class="shopping__heading">SHOPPING CART</h3>
+    </section>
+
+    <!--Корзина-->
+    <section class="cart center">
+        <div class="cart__product">
+            <div class="cart__product__card">
+                <img src="img/card_3_cart.jpg" alt="card_cart" class="cart__img">
+                <div class="product__data">
+                    <h3 class="cart__heading">MANGO PEOPLE<br>T-SHIRT</h3>
+                    <p class="cart__text">Price: <span class="cart__price">$300</span></p>
+                    <p class="cart__text">Color: Red</p>
+                    <p class="cart__text">Size: Xl</p>
+                    <p class="cart__text">Quantity: <span class="cart__amount">2</span></p>
+                </div>
+                <img class="cross" src="img/cross.svg" alt="cross">
+            </div>
+            <div class="cart__product__card">
+                <img src="img/card_men_2_cart.jpg" alt="card_cart" class="cart__img">
+                <div class="product__data">
+                    <h3 class="cart__heading">MANGO PEOPLE<br>T-SHIRT</h3>
+                    <p class="cart__text">Price: <span class="cart__price">$300</span></p>
+                    <p class="cart__text">Color: Red</p>
+                    <p class="cart__text">Size: Xl</p>
+                    <p class="cart__text">Quantity: <span class="cart__amount">2</span></p>
+                </div>
+                <img class="cross" src="img/cross.svg" alt="cross">
+            </div>
+            <div class="control__input">
+                <div class="shopping__input">
+                    <a href="#" class="clear__input">CLEAR SHOPPING CART</a>
+                </div>
+                <div class="shopping__input">
+                    <a href="#" class="continue__input">CONTINUE SHOPPING</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart__order">
+            <form class="cart__order__form" method="post" action="submit.html">
+                <h3 class="tottal__heading">SHIPPING ADRESS</h3>
+                <p>
+                    <input class="delivery__address address__city" type="text" name="city" id="city"
+                        placeholder="Bangladesh">
+                </p>
+                <p>
+                    <input class="delivery__address" type="text" name="state" id="state" placeholder="State">
+                </p>
+                <p>
+                    <input class="delivery__address" type="text" name="postcode" id="postcode"
+                        placeholder="Postcode / Zip">
+                </p>
+                <p>
+                    <input class="input__price" type="submit" value="GET A QUOTE">
+                </p>
+            </form>
+            <div class="cart__order__tottal">
+                <div class="tottal__box">
+                    <p class="tottal__text">SUB TOTAL <span class="tottal__text__price">$900</span></p>
+                    <h3 class="tottal__heading">GRAND TOTAL <span class="tottal__heading__price">$900</span></h3>
+                </div>
+                <div class="proceed__checkout">
+                    <a href="" class="checkout__input">PROCEED TO CHECKOUT</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Подвал-->
+    <footer class="footer">
+
+        <div class="middle_footer center">
+            <div class="quote">
+                <img src="img/footer_women.svg" alt="women">
+                <p class="quote_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                    <span class="quote_italic">a pulvinar purus condimentum“</span> </p>
+            </div>
+            <div class="forms_pack">
+                <h4 class="forms_heading">SUBSCRIBE</h4>
+                <p class="forms_text">FOR OUR NEWLETTER AND PROMOTION</p>
+                <form action="#" method="POST" class="subform">
+                    <p>
+                        <input type="email" name="email" id="email" placeholder="Enter Your Email"
+                            class="format"><button type="submit" class="dispatch">Subscribe</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+
+        <div class="bottom_center center">
+            <p class="bottom_text">&copy; 2021 Brand All Rights Reserved.</p>
+            <div class="bottom_left">
+                <a href="https://www.facebook.com" class="footer_icon" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com" class="footer_icon" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.pinterest.com" class="footer_icon" target="_blank">
+                    <i class="fab fa-pinterest-p"></i>
+                </a>
+                <a href="https://www.twitter.ru" class="footer_icon" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

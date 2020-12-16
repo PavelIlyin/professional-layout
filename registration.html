@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FASHION</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+</head>
+
+<body>
+    <header class="header center">
+        <div class="header_left">
+            <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+            <a href="#"><img class="header_search" src="img/search.svg" alt="search"></a>
+        </div>
+        <nav class="header_right">
+            <a href="catalog.html"><img src="img/menu.svg" alt="menu"></a>
+            <a href="registration.html"><img class="header_accoutn" src="img/account.svg" alt="account"></a>
+            <a href="cart.html"><img src="img/cart.svg" alt="cart"></a>
+        </nav>
+    </header>
+    <section class="catalog_series center">
+        <h3 class="shopping__heading">REGISTRATION</h3>
+    </section>
+
+    <!--Регистрация-->
+    <section class="account center">
+        <div class="account__forms">
+            <form class="registration__forms" method="post" action="submit.html">
+                <h4 class="registration__heading">Your Name</h4>
+                <p>
+                    <input type="text" name="firstName" id="firstName" placeholder="First Name" class="input__field">
+                </p>
+                <p>
+                    <input type="text" name="lastName" id="lastName" placeholder="Last Name" class="input__field">
+                </p>
+                <div class="switch">
+                    <p class="input__switch">
+                        <input class="input__switch__radio" type="radio" name="sex" value="male" id="male">
+                        <label class="input__switch__label" for="male">Male</label>
+                    </p>
+                    <p class="input__switch">
+                        <input class="input__switch__radio" type="radio" name="sex" value="female" id="female">
+                        <label class="input__switch__label" for="female">Female</label>
+                    </p>
+                    <p class="input__switch">
+                        <input class="input__switch__radio" type="radio" name="sex" value="other" id="other">
+                        <label class="input__switch__label" for="other">Other</label>
+                    </p>
+                </div>
+                <h4 class="registration__heading">Login details</h4>
+                <p>
+                    <input type="email" name="email" placeholder="Email" class="input__field">
+                </p>
+                <p>
+                    <input type="password" name="password" placeholder="Password" class="input__field">
+                </p>
+                <p class="password__text">
+                    Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase
+                    letters
+                </p>
+                <p class="input__registration__box">
+                    <input class="input__registration" type="submit" value="JOIN NOW">
+                    <img class="input__registration__img" src="img/arrow_input.svg" alt="arrow_input">
+                </p>
+            </form>
+        </div>
+
+        <div class="account__perks">
+            <h3 class="perks__heading">LOYALTY HAS ITS PERKS</h3>
+            <ul class="perks__list">Get in on the loyalty program where you can earn points and unlock serious perks.
+                Starting with these as soon as you join:
+                <li class="perks__item">15% off welcome offer</li>
+                <li class="perks__item">Free shipping, returns and exchanges on all orders</li>
+                <li class="perks__item">$10 off a purchase on your birthday</li>
+                <li class="perks__item">Early access to products</li>
+                <li class="perks__item">Exclusive offers & rewards</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!--Подвал-->
+    <footer class="footer">
+        <div class="middle_footer center">
+            <div class="quote">
+                <img src="img/footer_women.svg" alt="women">
+                <p class="quote_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                    <span class="quote_italic">a pulvinar purus condimentum“</span> </p>
+            </div>
+            <div class="forms_pack">
+                <h4 class="forms_heading">SUBSCRIBE</h4>
+                <p class="forms_text">FOR OUR NEWLETTER AND PROMOTION</p>
+                <form action="#" method="POST" class="subform">
+                    <p>
+                        <input type="email" name="email" id="email" placeholder="Enter Your Email"
+                            class="format"><button type="submit" class="dispatch">Subscribe</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+        <div class="bottom_center center">
+            <p class="bottom_text">&copy; 2021 Brand All Rights Reserved.</p>
+            <div class="bottom_left">
+                <a href="https://www.facebook.com" class="footer_icon" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com" class="footer_icon" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.pinterest.com" class="footer_icon" target="_blank">
+                    <i class="fab fa-pinterest-p"></i>
+                </a>
+                <a href="https://www.twitter.ru" class="footer_icon" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
