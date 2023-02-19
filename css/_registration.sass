@@ -1,0 +1,127 @@
+.checkout__heading
+    transform: rotate(360deg)
+    transition: transform ease-in .3s
+
+.account
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    padding-top: 64px
+
+.registration__heading
+    @extend .tottal__heading
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both
+
+.input__field
+    width: 360px
+    height: 45px
+    padding: 16px
+    margin-top: 20px
+    font-weight: 300
+    font-size: 13px
+    line-height: 16px
+    color: #B1B1B1
+    outline: none
+    transition: transform 0.4s
+
+    &:focus
+        transform: scale($scaleSize)
+
+/* Radio input */
+
+.switch
+    padding: 30px 0
+
+.input__switch
+    display: inline-block
+    font-style: normal
+    font-weight: 300
+    font-size: 11px
+
+.input__switch__radio[type=radio]
+    display: none
+
+.input__switch__label
+    display: inline-block
+    cursor: pointer
+    position: relative
+    padding-left: 25px
+    margin-right: 20px
+    line-height: 18px
+    user-select: none
+
+.input__switch__label:before
+    content: ""
+    display: inline-block
+    width: 17px
+    height: 18px
+    position: absolute
+    left: 0
+    bottom: 1px
+    background: url(../img/radio.svg) 0 0 no-repeat
+
+.input__switch__radio[type=radio]:checked + .input__switch__label:before
+    background: url(../img/radio_active.svg) 0 0 no-repeat
+
+.input__switch__label:hover:before
+    filter: brightness(120%)
+
+.password__text
+    width: 360px
+    font-style: normal
+    font-weight: 300
+    font-size: 13px
+    line-height: 16px
+    color: #B1B1B1
+    padding-top: 15px
+
+.input__registration__box
+    position: relative
+
+.input__registration
+    font-size: 14px
+    line-height: 17px
+    background-color: $mainColor
+    color: $neutralColor
+    border: none
+    padding: 16px 66px 16px 29px
+    margin-top: 39px
+    margin-bottom: 113px
+    outline: none
+    cursor: pointer
+    transition: transform .3s
+
+    &__img
+        position: absolute
+        top: 59px
+        left: 120px
+
+    &:hover
+        background-color: $inputColor
+        transform: scale($scaleSize)
+
+    &:active
+        box-shadow: inset 2px 2px 2px 2px $activeColor
+
+.perks__list, .perks__heading, .perks__text
+    width: 652px //!!!
+    font-weight: 300
+    font-size: 24px
+    line-height: 29px
+    animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+
+.perks__heading
+    padding-bottom: 22px
+
+.perks__item
+    list-style: inside
+    list-style-type: none
+    background-image: url(../img/list_marker.svg)
+    background-repeat: no-repeat
+    background-position: left 8px
+    padding-left: 40px
+    padding-bottom: 16px
+
+.perks__item:first-of-type
+    padding-top: 22px
+    background-position: left 30px

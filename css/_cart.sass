@@ -1,0 +1,179 @@
+.shopping__heading
+    font-size: 24px
+    line-height: 29px
+    color: $mainColor
+    text-align: left
+
+.cart
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    padding-top: 96px
+
+    &__product__card
+        display: flex
+        justify-content: flex-start
+        align-items: flex-start
+        box-shadow: 17px 19px 24px #00000021
+        transition: transform .3s
+
+        &:hover
+            transform: scale($scaleSize)
+
+    &__product__card:not(:last-of-type)
+        margin-bottom: 40px
+
+    &__product
+        padding-bottom: 128px
+
+    &__order__tottal
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: center
+        width: 360px
+        height: 214px
+        background: #F5F3F3
+
+    &__order__form
+        padding-top: 20px
+
+    &__price
+        color: #EF5B70
+
+    &__amount
+        padding: 1px 0 1px 0
+        margin-left: 24px
+        border: 1px solid #eaeaea
+        text-align: center
+        font-size: 18px
+        line-height: 22px
+        color: #656565
+        outline: none
+
+.proceed__checkout
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    align-items: center
+    padding-top: 17px
+
+.control__input
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 32px
+
+.shopping__input
+    padding: 17px 39px
+    border: 1px solid #a4a4a4
+    cursor: pointer
+    transition: background-color .3s
+
+    &:hover
+        color: $neutralColor
+        background-color: #a4a4a4
+
+    &:active
+        box-shadow: inset 2px 2px 2px 2px #9c9696
+
+.clear__input, .continue__input
+    color: #000000
+    font-weight: 300
+    font-size: 14px
+    line-height: 17px
+
+.product__data
+    width: 262px
+    margin: 22px 57px 62px 31px
+
+.cart__heading
+    font-style: normal
+    font-weight: normal
+    font-size: 24px
+    line-height: 29px
+    color: #222222
+    padding-bottom: 22px
+
+.cart__text
+    font-size: 22px
+    line-height: 26px
+    color: #575757
+    padding-bottom: 6px
+
+.cross
+    width: 16px
+    height: 16px
+    margin: 28px 28px 0 0
+
+.tottal__box
+    width: 268px
+    text-align: right
+    border-bottom: 1px solid #E2E2E2
+    padding: 40px 0 20px 0
+
+.tottal__text
+    font-size: 11px
+    line-height: 13px
+    color: #4A4A4A
+    padding-bottom: 12px
+
+    &__price
+        padding-left: 30px
+
+.tottal__heading
+    font-weight: 300
+    font-size: 16px
+    line-height: 19px
+    color: #222222
+
+    &__price
+        font-weight: bold
+        color: $mainColor
+        padding-left: 20px
+
+.checkout__input
+    font-size: 16px
+    line-height: 19px
+    color: $neutralColor
+    padding: 14px 38px
+    background-color: $mainColor
+    transition: background-color .3s
+
+    &:hover
+        background-color: $inputColor
+
+    &:active
+        box-shadow: inset 2px 2px 2px 2px$activeColor
+
+.delivery__address
+    width: 360px
+    height: 45px
+    padding: 0 17px
+    margin-bottom: 20px
+    outline: none
+    border: 1px solid #A4A4A4
+
+.address__city
+    margin-top: 20px
+    color: #B1B1B1
+
+.input__price
+    font-weight: 300
+    font-size: 11px
+    line-height: 13px
+    background-color: $neutralColor
+    color: #4A4A4A
+    border: 1px solid #a4a4a4
+    padding: 10px 15px
+    margin-bottom: 57px
+    outline: none
+    cursor: pointer
+    transition: background-color .3s
+
+    &:hover
+        color: $neutralColor
+        background-color: #a4a4a4
+
+    &:active
+        box-shadow: inset 2px 2px 2px 2px #9c9696
